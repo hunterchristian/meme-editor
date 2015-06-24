@@ -1,0 +1,24 @@
+<div class="group js-submission-success" id="submissionSuccess" style="display: none">
+    <span class="fa fa-check-circle fa-4x pull-left text--positive"></span>
+    <p class="pull-left success-message"> You have successfully submitted your caption. Go ahead and share it for the world to see!</p>
+</div>
+
+<div class="caption-media" id="captionMeme">
+    <canvas class="meme-canvas"></canvas>
+    <captiontext id="topCaption" class="caption--top" fontsize="100" placeholdertext="TOP CAPTION&#10; Click to Enter Text"></captiontext>
+    <!--<img class="caption-image" src="../../assets/img/SWEET-BROWN.jpg" alt="Mock"/>-->
+    <captiontext id="bottomCaption" class="caption--bottom" fontsize="100" placeholdertext="BOTTOM CAPTION&#10; Click to Enter Text"></captiontext>
+</div>
+<div id="termsSubmit">
+    <p>By clicking submit, I agree to the Contest Rules and upload guidelines of this contest</p>
+    <button class="js-submit-entry panel-button" ng-disabled="areInputsEmpty()" ng-click="uploadMeme()">Submit Entry</button>
+</div>
+<div id="socialShare" style="display: none">
+    <div class="social-share">
+        <span class="social-button social-button--facebook" data-social="Facebook"><i class="fa fa-facebook fa-3x icn"></i></span>
+        <span class="social-button social-button--twitter" data-social="Twitter"><i class="fa fa-twitter fa-3x icn"></i></span>
+        <span class="social-button social-button--google" data-social="Google +"><i class="fa fa-google-plus fa-3x icn"></i></span>
+        <span class="social-button social-button--instagram" data-social="Instagram"><i class="fa fa-instagram fa-3x icn"></i></span>
+        <span class="social-button social-button--email" data-social="Email"><i class="fa fa-envelope fa-3x icn"></i></span>
+    </div>
+</div>
